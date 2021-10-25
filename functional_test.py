@@ -1,6 +1,8 @@
 import unittest
-from selenium import webdriver
+import time
 
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
 
 class NewVisitorTest(unittest.TestCase):
 
@@ -18,11 +20,12 @@ class NewVisitorTest(unittest.TestCase):
 
         #She notices the page title and header mention to-do list
         self.assertIn('To-Do', self.navegador.title)
-        self.fail("finish the test!")
-
+        header_test = self.navegador.find_element_by_tag_name('h1').text
+        self.assertIn('To-Do', header_test)
 
         #She is invited to enter a to-do item straight away
-
+        inputbox = self.navegador.find_elements_by_id('id_new_item')
+        self.assertEqual
         #She types "Buy peacock feathers" into a text box (Edith's hobby
         #is tying fly-fishing lures)
 
@@ -41,6 +44,8 @@ class NewVisitorTest(unittest.TestCase):
         #She visits that URL - her to-do list is still there.
 
         #Satisfied, she goes back to sleep
+
+        self.fail("finish the test!")
 
 if __name__ == '__main__':
     unittest.main()
