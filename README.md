@@ -35,11 +35,16 @@ _Luego debemos de crear el entorno virtual_
 ```
 python -m venv todolist-env
 ```
-_Después para activar el entorno debemos de seguir los siguientes pasos._  
+_Después para activar el entorno debemos de seguir los siguientes pasos en el caso de **Linux**._  
 1. cd todolist-env
 2. cd bin
 3. source activate
-4. Volvemos al directorio del proyecto  
+4. Volvemos al directorio del proyecto    
+
+_En el caso de **Windows** hacer los siguientes pasos_  
+1. cd todolist-env
+2. cd scripts
+3. activate
    
 _Esto hará que se active la variable de entorno de Python_  
 _Instalamos el archivo requeriments.txt con todos los paquetes que vamos a necesitar._
