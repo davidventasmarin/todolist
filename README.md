@@ -16,6 +16,16 @@ python --version
 ```
 _Cumplido este requisito, ahora ya vamos a lo que tiene que ver con el proyecto en sí, para ello hacemos los pasos que tenemos en el apartado de Instalación_
 
+## Warning ⚠️
+Sí nos sale un error, difícil de leer, debemos de comprobar que la versión que tenemos de Django es la adecuada. Muchas veces cuando instalamos paquetes, lo hacemos para el sistema entero, lo que nosotros nos debemos acostumbrar cuando desarrollamos en Python es en usar los entornos virtuales.  
+Para solucionar esto lo único que debemos hacer es comprobar primero que versión tenemos de Django, si es incorrecta la hemos de borrar, e instalar la versión adecuada. debemos de seguir los siguientes pasos en orden.
+
+```
+pip freeze 
+pip uninstall django
+pip install -r requeriments.txt
+```
+
 ### Instalación 🧰
 _Descargamos el proyecto_
 ```
@@ -40,18 +50,6 @@ _Una ya tenemos hecho esto, para comprobar que todo está bien debemos de ejecut
 ```
 python manage.py test lists
 ```
-
-## Warning ⚠️
-Sí nos sale un error, difícil de leer, debemos de comprobar que la versión que tenemos de Django es la adecuada. Muchas veces cuando instalamos paquetes, lo hacemos para el sistema entero, lo que nosotros nos debemos acostumbrar cuando desarrollamos en Python es en usar los entornos virtuales.  
-Para solucionar esto lo único que debemos hacer es comprobar primero que versión tenemos de Django, si es incorrecta la hemos de borrar, e instalar la versión adecuada. debemos de seguir los siguientes pasos en orden.
-
-```
-pip freeze 
-pip uninstall django
-pip install -r requeriments.txt
-```
-Una vez hecho esto, comprobamos de nuevo los test..
-
 
 Pruebas Unitarias 🧪
 
