@@ -56,7 +56,14 @@ _Una ya tenemos hecho esto, para comprobar que todo está bien debemos de ejecut
 python manage.py test lists
 ```
 
-Pruebas Unitarias 🧪
+## Pruebas Unitarias 🧪
+Las pruebas unitarias están hechas con unittest, y las funcionales está hecha con Selenium.
+
+## Desplegar el proyecto 🏃 
+Para ver la aplicación, sólo necesitas ejecutar el siguiente comando.  
+```
+python manage.py runserver
+```
 
 ## Expresiones de Gratitud 🎁
 * Habla a otras personas de este proyecto.📢
